@@ -34,7 +34,7 @@ After correctly entering your password and using the ls command, you should see 
 As you have seen, most commands that connect to the server require you to input your password. Creating an SSH key allows you to run these commands without typing in your password everytime. To set this up, run the following commands:  
 **ssh-keygen (ssh-keygen -t ed25519 if on Windows)**  
 When prompted to enter a file to save the key in, enter:  
-**(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)**  
+(**/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username**)  
   
 If you want to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
   
