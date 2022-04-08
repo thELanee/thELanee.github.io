@@ -34,7 +34,7 @@ After correctly entering your password and using the ls command, you should see 
 As you have seen, most commands that connect to the server require you to input your password. Creating an SSH key allows you to run these commands without typing in your password everytime. To set this up, run the following commands:  
 **ssh-keygen (ssh-keygen -t ed25519 if on Windows)**  
 When prompted to enter a file to save the key in, enter:  
-(**/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username**)  
+(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)  
   
 If you want to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
   
@@ -55,15 +55,23 @@ Once you do this you should be able to ssh or scp from this client to the server
 
 ### Step 6: Optimizing Remote Running  
 Some techniques you can do to optimize remote running are:  
+    
     - Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
+    
         ssh cs15lsp22zz@ieng6.ucsd.edu "ls"  
+    
     - Using semicolons to run multiple commands on the same line in most terminals
+    
         cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI
+    
     - You can use the up-arrow on your keyboard to recall the last command that was run
+    
 
 Here's an example of running multiple commands in one line: 
     
-![image](https://user-images.githubusercontent.com/92767729/162385176-13e73619-e80b-445d-9704-0995c0bd8860.png)
+    
+![image](https://user-images.githubusercontent.com/92767729/162396200-3ab4647c-5d38-4c16-afa4-55a06df8270b.png)
+
 
 
 
