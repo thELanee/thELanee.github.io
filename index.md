@@ -50,7 +50,7 @@ Now we can copy the public key to the .ssh directory of your user account on the
     
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
     
-![image](https://user-images.githubusercontent.com/92767729/162392778-d34440d2-e141-4304-8b83-2dc7e098cbe8.png)
+![image](https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png)
 
 
 ### Step 6: Optimizing Remote Running  
