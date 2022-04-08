@@ -36,7 +36,19 @@ ssh-keygen (ssh-keygen -t ed25519 if on Windows)
 When prompted to enter a file to save the key in, enter:  
 (/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)  
 If you would like to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
-![image](https://user-images.githubusercontent.com/92767729/162380206-febdf67f-37ed-4f5d-9b3d-b4b4a526b274.png)
+  
+![image](https://user-images.githubusercontent.com/92767729/162380206-febdf67f-37ed-4f5d-9b3d-b4b4a526b274.png)  
+  
+Now we can copy the public key to the .ssh directory of your user account on the server.  
+  ssh cs15lsp22zz@ieng6.ucsd.edu
+  <Enter Password>
+  mkdir .ssh
+  <logout>
+  scp /Users/<user-name>/.ssh/id_rsa.pub  
+  cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
+Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
+    ![image](https://user-images.githubusercontent.com/92767729/162383485-298598d1-6422-41c4-9be1-631b4eb9fc81.png)
+
 
 
 
