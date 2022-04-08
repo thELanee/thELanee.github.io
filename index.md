@@ -59,8 +59,7 @@ Some techniques you can do to optimize remote running are:
 
 Here's an example of running multiple commands in one line: 
     
-    ![image](https://user-images.githubusercontent.com/92767729/162385079-62c118ee-dbbd-48d3-9b42-272447aa83a6.png)
-
+![image](https://user-images.githubusercontent.com/92767729/162385176-13e73619-e80b-445d-9704-0995c0bd8860.png)
 
 
 
