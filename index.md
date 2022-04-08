@@ -18,4 +18,10 @@ Then you should be prompted to type in your password. If it is correct, your ter
   
 ![image](https://user-images.githubusercontent.com/92767729/162377584-7fe5c2bc-7546-4645-b202-8894c4eae364.png)
 
+### Step 3: Run Some Commands
+Some commands you can run are cd, ls, pwd, mkdir and cp. These commands can be run on both your computer and the remote computer and do different things.
+For example, the ls -a command prints out all the files in the directory, including hidden files.  
+![image](https://user-images.githubusercontent.com/92767729/162378057-8c96c433-86f4-490c-bcbe-5000f91cabb0.png)
+
+
 
