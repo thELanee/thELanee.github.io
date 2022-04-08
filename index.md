@@ -49,6 +49,18 @@ Now we can copy the public key to the .ssh directory of your user account on the
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
     ![image](https://user-images.githubusercontent.com/92767729/162383485-298598d1-6422-41c4-9be1-631b4eb9fc81.png)
 
+### Step 6: Optimizing Remote Running  
+Some techniques you can do to optimize remote running are:  
+    - Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
+        ssh cs15lsp22zz@ieng6.ucsd.edu "ls"  
+    - Using semicolons to run multiple commands on the same line in most terminals
+        cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI
+    - You can use the up-arrow on your keyboard to recall the last command that was run
+
+Here's an example of running multiple commands in one line: 
+    
+    
+
 
 
 
