@@ -27,7 +27,15 @@ For example, the ls -a command prints out all the files in the directory, includ
 scp allows you to copy files back and forth between the local and remote computer. If I were to create a file on my computer titled WhereAmI.java, I can copy it to the remote computer using this command (with your actual username):  
 scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/  
 After correctly entering your password and using the ls command, you should see the file in your home directory. You can even run it on the remote computer. If you are successful, you should get something like this: 
-![image](https://user-images.githubusercontent.com/92767729/162378710-332c01da-9db4-4e54-a55b-ff5ad8166073.png)
+![image](https://user-images.githubusercontent.com/92767729/162378710-332c01da-9db4-4e54-a55b-ff5ad8166073.png)  
+
+### Step 5: Setting an SSH Key
+
+As you have seen, most commands that connect to the server require you to input your password. Creating an SSH key allows you to run these commands without typing in your password everytime. To set this up, run the following commands:  
+ssh-keygen (ssh-keygen -t ed25519 if on Windows)  
+When prompted to enter a file to save the key in, enter:  
+(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)  
+If you would like to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  
 
 
 
