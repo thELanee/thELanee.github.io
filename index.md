@@ -52,7 +52,7 @@ Once you do this you should be able to ssh or scp from this client to the server
  
 ![image](https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png)
 
-
+<br>
 ### Step 6: Optimizing Remote Running  
 Some techniques you can do to optimize remote running are:  
 
