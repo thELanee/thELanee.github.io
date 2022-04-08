@@ -41,36 +41,40 @@ If you want to set up a passphrase to use the ssh key, enter one. If you do not 
 ![image](https://user-images.githubusercontent.com/92767729/162380206-febdf67f-37ed-4f5d-9b3d-b4b4a526b274.png)  
   
 Now we can copy the public key to the .ssh directory of your user account on the server.  
+  ```
   ssh cs15lsp22zz@ieng6.ucsd.edu
   <Enter Password>
   mkdir .ssh
   <logout>
   scp /Users/<user-name>/.ssh/id_rsa.pub  
   cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
-<br>
+    
+  ```
+  
+    
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
  
-<img src = "https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png">
+![image](https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png)  
 
     
-<h3>Step 6: Optimizing Remote Running</h3>
+### Step 6: Optimizing Remote Running
 Some techniques you can do to optimize remote running are:  
 
-Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
+- Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
     
-ssh cs15lsp22zz@ieng6.ucsd.edu "ls"  
+- `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
     
-Using semicolons to run multiple commands on the same line in most terminals
+- Using semicolons to run multiple commands on the same line in most terminals
     
-cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI
+- `cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI`
     
-You can use the up-arrow on your keyboard to recall the last command that was run
+- You can use the up-arrow on your keyboard to recall the last command that was run
     
 
 Here's an example of running multiple commands in one line: 
     
     
-<img src = "https://user-images.githubusercontent.com/92767729/162396200-3ab4647c-5d38-4c16-afa4-55a06df8270b.png">
+![image](https://user-images.githubusercontent.com/92767729/162396200-3ab4647c-5d38-4c16-afa4-55a06df8270b.png)
 
 
 
