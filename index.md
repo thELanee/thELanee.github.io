@@ -47,7 +47,7 @@ Now we can copy the public key to the .ssh directory of your user account on the
   <logout>
   scp /Users/<user-name>/.ssh/id_rsa.pub  
   cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
-    
+<br>
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
  
 <img src = "https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png">
