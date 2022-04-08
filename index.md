@@ -70,7 +70,7 @@ You can use the up-arrow on your keyboard to recall the last command that was ru
 Here's an example of running multiple commands in one line: 
     
     
-![image](https://user-images.githubusercontent.com/92767729/162396200-3ab4647c-5d38-4c16-afa4-55a06df8270b.png)
+<img src = "https://user-images.githubusercontent.com/92767729/162396200-3ab4647c-5d38-4c16-afa4-55a06df8270b.png">
 
 
 
