@@ -49,22 +49,22 @@ Now we can copy the public key to the .ssh directory of your user account on the
   cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
     
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
-    
+ 
 ![image](https://user-images.githubusercontent.com/92767729/162396578-a73030c1-f587-4a25-a7b7-ddaecb7bf7eb.png)
 
 
 ### Step 6: Optimizing Remote Running  
 Some techniques you can do to optimize remote running are:  
+
+Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
     
-    Writing a command in quotes at the end of an ssh command to directly run it on the remote server then exit  
+ssh cs15lsp22zz@ieng6.ucsd.edu "ls"  
     
-        ssh cs15lsp22zz@ieng6.ucsd.edu "ls"  
+Using semicolons to run multiple commands on the same line in most terminals
     
-    Using semicolons to run multiple commands on the same line in most terminals
+cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI
     
-        cp WhereAmI.Java OtherMain.java; javac OtherMain.java; java WhereAmI
-    
-    You can use the up-arrow on your keyboard to recall the last command that was run
+You can use the up-arrow on your keyboard to recall the last command that was run
     
 
 Here's an example of running multiple commands in one line: 
