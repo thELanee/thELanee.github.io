@@ -36,7 +36,7 @@ As you have seen, most commands that connect to the server require you to input 
 When prompted to enter a file to save the key in, enter:  
 **(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)**  
   
-If you would like to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
+If you want to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
   
 ![image](https://user-images.githubusercontent.com/92767729/162380206-febdf67f-37ed-4f5d-9b3d-b4b4a526b274.png)  
   
