@@ -25,16 +25,16 @@ For example, the ls -a command prints out all the files in the directory, includ
 
 ### Step 4: Moving Files with scp
 scp allows you to copy files back and forth between the local and remote computer. If I were to create a file on my computer titled WhereAmI.java, I can copy it to the remote computer using this command (with your actual username):  
-scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/  
+**scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/**  
 After correctly entering your password and using the ls command, you should see the file in your home directory. You can even run it on the remote computer. If you are successful, you should get something like this: 
 ![image](https://user-images.githubusercontent.com/92767729/162378710-332c01da-9db4-4e54-a55b-ff5ad8166073.png)  
 
 ### Step 5: Setting an SSH Key
 
 As you have seen, most commands that connect to the server require you to input your password. Creating an SSH key allows you to run these commands without typing in your password everytime. To set this up, run the following commands:  
-ssh-keygen (ssh-keygen -t ed25519 if on Windows)  
+**ssh-keygen (ssh-keygen -t ed25519 if on Windows)**  
 When prompted to enter a file to save the key in, enter:  
-(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)  
+**(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa (with the correct username)**  
 If you would like to set up a passphrase to use the ssh key, enter one. If you do not wish to use a password, just leave the field empty and press enter.  You should get something like this:  
   
 ![image](https://user-images.githubusercontent.com/92767729/162380206-febdf67f-37ed-4f5d-9b3d-b4b4a526b274.png)  
@@ -46,6 +46,7 @@ Now we can copy the public key to the .ssh directory of your user account on the
   <logout>
   scp /Users/<user-name>/.ssh/id_rsa.pub  
   cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys  
+    
 Once you do this you should be able to ssh or scp from this client to the server without entering your password like so:  
     ![image](https://user-images.githubusercontent.com/92767729/162383485-298598d1-6422-41c4-9be1-631b4eb9fc81.png)
 
