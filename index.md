@@ -23,7 +23,7 @@ For example, the `ls -a` command prints out all the files in the directory, incl
 scp allows you to copy files back and forth between the local and remote computer. If I were to create a file on my computer titled WhereAmI.java, I can copy it to the remote computer using this command (with your actual username):  
 **scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/**  
 After correctly entering your password and using the ls command, you should see the file in your home directory. You can even run it on the remote computer. If you are successful, you should get something like this: 
-![image](https://user-images.githubusercontent.com/92767729/162378710-332c01da-9db4-4e54-a55b-ff5ad8166073.png)  
+![image](https://user-images.githubusercontent.com/92767729/163702748-136bc7d2-0abb-4d83-ae51-2e3f300aebba.png)  
 
 ### Step 5: Setting an SSH Key
 
